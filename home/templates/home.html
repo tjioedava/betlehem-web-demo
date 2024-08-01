@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>GSJA Betlehem</title>
+        <title>{{organization_name}}</title>
     </head>
 
     <body>
-        <h1>GSJA Betlehem Site</h1>
+        <h1>{{organization_name}}</h1>
+        <h3>Alamat: Jl. Suryakencana Kec. Bogor Tengah</h3>
+        <h3>Gembala: Pdt. Arif Multi Ardania</h3>
+        <h2>Album:</h2>
+        {% if albums %}
+            {% for album in albums %}
+                <h3>{{album.name}}</h3>
+            {% endfor %}
+        {% endif %}
+
+        <br>
+        <h2>LIFE:</h2>
+        {% if lifes %}
+            {% for life in lifes %}
+                <h3>{{life.name}}</h3>
+            {% endfor %}
+        {% endif %}
     </body>
 </html>
