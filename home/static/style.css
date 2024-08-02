@@ -1,0 +1,77 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 1150px; /* Adjust based on your design needs */
+    margin: 0 auto; /* Center the container */
+    width: 100%;
+}
+
+.logo img {
+    height: 40px; /* Adjust the logo size as needed */
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 15px; /* Adjust the gap between the navigation items */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 12px;
+    border-radius: 5px;
+}
+
+nav #current{
+    background-color: #333333;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #333333; /* Adjust hover color as needed */
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    background-color: #1A1A5A; /* Button color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button a:hover,
+.button a:focus {
+    background-color: #2C2C7A; /* Adjust hover button color as needed */
+}
+
+/* Add some padding to the top of the main content to prevent it from being hidden behind the fixed header */
+main {
+    padding-top: 80px; /* Adjust based on the height of your header */
+}

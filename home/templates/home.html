@@ -1,26 +1,46 @@
+
+{% load static %}
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>{{organization_name}}</title>
-    </head>
-
-    <body>
-        <h1>{{organization_name}}</h1>
-        <h3>Alamat: Jl. Suryakencana Kec. Bogor Tengah</h3>
-        <h3>Gembala: Pdt. Arif Multi Ardania</h3>
-        <h2>Album:</h2>
-        {% if albums %}
-            {% for album in albums %}
-                <h3>{{album.name}}</h3>
-            {% endfor %}
-        {% endif %}
-
-        <br>
-        <h2>LIFE:</h2>
-        {% if lifes %}
-            {% for life in lifes %}
-                <h3>{{life.name}}</h3>
-            {% endfor %}
-        {% endif %}
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation Bar</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="{% static 'images/betlehem_logo.png' %}" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home" target ="_self" id="current">Home</a></li>
+                    <li><a href="events" target ="_self">Events</a></li>
+                    <li><a href="tentang-kami" target ="_self">Tentang Kami</a></li>
+                    <li><a href="hubungi-kami" target ="_self">Hubungi Kami</a></li>
+                </ul>
+            </nav>
+            <div class="button">
+                <a href="#">Ibadah Online</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nesciunt similique labore dolores totam, omnis non, tenetur harum adipisci est, quidem veritatis temporibus incidunt ipsum! Consectetur ex doloribus dolorum eius.</p>
+    </main>
+</body>
 </html>
