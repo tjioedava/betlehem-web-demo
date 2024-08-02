@@ -6,6 +6,5 @@ urlpatterns = [
     path('events', render_events, name = 'render_events'),
     path('tentang-kami', render_tentang_kami, name = 'render_tentang_kami'),
     path('hubungi-kami', render_hubungi_kami, name = 'render_hubungi_kami'),
-    path('input', render_form, name = 'render_input'),
     path('', render_home, name = 'render_home'),
 ]

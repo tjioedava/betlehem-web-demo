@@ -1,18 +1,9 @@
 from django.shortcuts import render
-from django.contrib.auth.decorators import user_passes_test
-from .models import Main
-from .forms import AlbumForm
+from .models import *
 
 def render_home(request):
+    context = {'communities': Komunitas.objects.all().values()}
 
-    main = Main.objects.get(id = 1)
-    albums = main.product.albums
-    lifes = main.community
-
-    context = {'organization_name': main.name,
-               'albums': albums.all().values(),
-               'lifes': lifes.all().values()}
-    
     return render(request, 'home.html', context)
 
 def render_events(request):
@@ -23,17 +14,3 @@ def render_tentang_kami(request):
 
 def render_hubungi_kami(request):
     return render(request, 'hubungi-kami.html', dict())
-
-def render_form(request):
-    
-    form = AlbumForm()
-
-    if request.method == 'POST':
-        form = AlbumForm(request.POST)
-        if(form.is_valid()):
-            form.save()
-            form = AlbumForm()
-
-    context = {'form': form}
-
-    return render(request, 'form.html', context)

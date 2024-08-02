@@ -1,14 +1,13 @@
 
+{% extends "base.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Navigation Bar</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/main/main-style.css' %}">
+    
+{% endblock head %}
+
+{% block body %}
     <header>
         <div class="container">
             <div class="logo">
@@ -23,12 +22,11 @@
                 </ul>
             </nav>
             <div class="button">
-                <a href="#">Ibadah Online</a>
+                <a href="https://www.youtube.com/playlist?list=PLd6u2_y53BpLUFxYbPyWumG7l8U9DqXPo" target="_blank">Ibadah Online</a>
             </div>
         </div>
     </header>
     <main>
         
     </main>
-</body>
-</html>
+{% endblock body %}

@@ -1,0 +1,28 @@
+/*modular sheet for applying design*/
+
+.bluebutton{
+    text-decoration: none;
+    color: white;
+    background-color: #1A1A5A; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.largebutton{
+    height: 75px;
+    width: 250px;
+    font-size: 20px;
+}
+
+.regbutton{
+    height: 50px;
+    width: 166px;
+    font-size: 13px;
+}
+
+.smallbutton{
+    height: 33px;
+    width: 110px;
+    font-size: 9px;
+}
